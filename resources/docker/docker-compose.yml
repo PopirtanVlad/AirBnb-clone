@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  postgres:
+    image: postgres
+    container_name: postgres_db
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_DB: airbnb_db
+      POSTGRES_USER: airbnb_db_user
+      POSTGRES_PASSWORD: airbnb_db_password
