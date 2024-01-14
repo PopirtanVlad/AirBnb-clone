@@ -21,7 +21,6 @@ import {AppController} from "./app.controller";
       entities: [User],
       synchronize: true
     }),
-      TypeOrmModule.forFeature([User]),
       AuthModule,
       UserModule,
   ],
